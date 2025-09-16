@@ -1,0 +1,88 @@
+# good stuff for everyone
+[init]
+	# no master/slavery anymore
+	defaultBranch = main
+
+[grep]
+	# show line numbers in grep output
+	# you can use git grep {your-pattern} to search for stuff in your repo
+	lineNumber = true
+
+[branch]
+	# sort by most recent commit
+	sort = -committerdate
+
+[tag]
+	# sort by version (v1.0, v1.1, v1.10)
+	sort = version:refname
+
+[diff]
+	# use a better diff algorithm
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[push]
+	# push the current branch with the same name on the remote.
+	default = simple
+	# if set to "true" assume --set-upstream on default push when no upstream tracking exists for the current branch.
+	# this allows for easier branch creation and pushing.
+	autoSetupRemote = true
+	# if set to true, enable --follow-tags option by default
+	# this allows for automatic pushing of annotated tags
+	followTags = true
+
+[pull]
+	# rebase instead of merge when pulling
+	# why this is not the default is beyond me :)
+	# this is the first thing newcomers face when using git and will not understand why they have a merge commit after pulling
+	rebase = true
+
+[fetch]
+	# automatically prune deleted branches when fetching
+	prune = true
+	# fetch will attempt to update all available remotes.
+	all = true
+
+[commit]
+	# helps you see all the changes in a commit dialog when writing a commit message
+	verbose = true
+
+[rerere]
+	# reuse recorded resolution of conflicted merges
+	# it doesn't hurt to have this on, even if you the recorded resolutions are not called often
+	enabled = true
+	# automatically update the index with the result of conflict resolution
+	autoupdate = true
+
+[merge]
+	# use a better merge algorithm zdiff3
+	# it shows you all the changes in a 3-way merge conflict instead of just the two sides
+	conflictStyle = zdiff3
+
+[help]
+	# super nice for all who type fast and make mistakes
+	# git will prompt you if you meant a different command
+	autoCorrect = prompt
+
+# personal stuff
+[core]
+	# set to nvim
+	editor = nvim
+
+[ssh]
+	# if specified, git will always use OpenSSH when using ssh:// URLs
+	# instead of trying to use any other ssh client it can find
+	variant = ssh
+
+[alias]
+	# git lol -> shows you logs of all branches in a nice graph
+	lol = log --oneline --graph --all
+	# git amend -> amends the last commit without changing the commit message and without opening an editor
+	amend = commit --amend --no-edit
+	# git pushf -> pushes with --force-with-lease meaning it will not overwrite remote changes if there are any. This is a safer option than --force
+	pushf = push --force-with-lease
+	# git ls -> lists all branches (local and remote)
+	ls = branch --all
+
