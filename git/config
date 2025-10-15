@@ -85,4 +85,5 @@
 	pushf = push --force-with-lease
 	# git ls -> lists all branches (local and remote)
 	ls = branch --all
-
+  sw = switch
+  st = status
