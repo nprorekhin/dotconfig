@@ -3,6 +3,10 @@
 	# no master/slavery anymore
 	defaultBranch = main
 
+[core]
+  # prevents automatic crlf conversion when working on windows and linux with the same repo
+  autocrlf = false
+
 [grep]
 	# show line numbers in grep output
 	# you can use git grep {your-pattern} to search for stuff in your repo
@@ -64,7 +68,7 @@
 [help]
 	# super nice for all who type fast and make mistakes
 	# git will prompt you if you meant a different command
-	autoCorrect = prompt
+  autoCorrect = prompt
 
 # personal stuff
 [core]
@@ -84,6 +88,13 @@
 	# git pushf -> pushes with --force-with-lease meaning it will not overwrite remote changes if there are any. This is a safer option than --force
 	pushf = push --force-with-lease
 	# git ls -> lists all branches (local and remote)
-	ls = branch --all
+  ls = branch --all
+  # short for git switch 
   sw = switch
+  # short for create branch and switch
+  swc = switch -c
   st = status
+  # commit with a message inline
+  cm = commit -m
+  c = commit
+  a = add .
