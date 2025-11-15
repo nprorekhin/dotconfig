@@ -1,0 +1,5 @@
+theme = "Dracula"
+font-family = "JetBrains Mono"
+window-padding-x = 8
+minimum-contrast = 1.1
+macos-titlebar-style = tabs
