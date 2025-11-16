@@ -96,7 +96,9 @@
   # short for create branch and switch
   swc = switch -c
   # status
-  s = status
+  st = status
+  # short status
+  s = status -s
   # commit with a message inline
   cm = commit -m
   # stage everyghing
