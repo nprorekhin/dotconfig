@@ -4,8 +4,9 @@
   defaultBranch = main
 
 [core]
-  # prevents automatic crlf conversion when working on windows and linux with the same repo
-  autocrlf = false
+  # by default, it is true.
+  # this helps in situations when you work in Windows and in Linux/WSL
+  autocrlf = true
 
 [grep]
   # show line numbers in grep output
