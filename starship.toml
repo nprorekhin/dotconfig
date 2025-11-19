@@ -185,7 +185,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$cloud(\($project\))]($style)\]'
 
 [os]
-format = '[$symbol]($style)'
+format = '[$symbol]($style) '
 disabled = false
 
 [package]
