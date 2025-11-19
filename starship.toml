@@ -1,3 +1,6 @@
+# prompt format
+format = '$os$all'
+
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 
@@ -182,7 +185,8 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$cloud(\($project\))]($style)\]'
 
 [os]
-format = '\[[$symbol]($style)\]'
+format = '[$symbol]($style)'
+disabled = false
 
 [package]
 format = '\[[$symbol$version]($style)\]'
