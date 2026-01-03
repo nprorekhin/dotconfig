@@ -3,11 +3,6 @@
   # no master/slavery anymore
   defaultBranch = main
 
-[core]
-  # by default, it is true.
-  # this helps in situations when you work in Windows and in Linux/WSL
-  autocrlf = true
-
 [grep]
   # show line numbers in grep output
   # you can use git grep {your-pattern} to search for stuff in your repo
