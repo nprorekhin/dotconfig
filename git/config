@@ -82,9 +82,9 @@
   # git amend -> amends the last commit without changing the commit message and without opening an editor
   amend = commit --amend --no-edit
   # git push
-  pu = push
-  # git puf -> pushes with --force-with-lease meaning it will not overwrite remote changes if there are any. This is a safer option than --force
-  puf = push --force-with-lease
+  p = push
+  # pushes with --force-with-lease meaning it will not overwrite remote changes if there are any. This is a safer option than --force
+  pfl = push --force-with-lease
   # git ls -> lists all branches (local and remote) and show last commit
   ls = branch --all -v
   # short for git switch 
@@ -100,6 +100,8 @@
   # stage everyghing
   a = add .
   # git restore unstaged files
-  re = restore
+  r = restore
   # git restore --staged files 
-  res = restore --staged
+  rs = restore --staged
+  # git branch -D to delete a local branch
+  rmb = branch -D
