@@ -105,3 +105,7 @@
   rs = restore --staged
   # git branch -D to delete a local branch
   rmb = branch -D
+  # show diff with staged files
+  ds = diff --staged
+  # show normal diff
+  d = diff
