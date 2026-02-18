@@ -1,5 +1,10 @@
-theme = "Dracula"
+background-opacity = 0.93
+background-blur = true
+
+theme = "Catppuccin Macchiato"
 font-family = "JetBrains Mono"
+
 window-padding-x = 8
 minimum-contrast = 1.1
+
 macos-titlebar-style = tabs
