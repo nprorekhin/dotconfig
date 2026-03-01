@@ -2,4 +2,5 @@
 !.gitattributes
 !git
 !ghostty
-!nvim
+!8nvim
+!alacritty
